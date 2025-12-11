@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Initialize a counter
+count=1
+
+# Loop until count is greater than 10
+while [ $count -le 10 ]
+do
+  echo "Best School"
+
+  # For the 9th iteration, also print "Hi"
+  if [ $count -eq 9 ]; then
+    echo "Hi"
+  fi
+
+  ((count++))  # Increment the counter
+done
